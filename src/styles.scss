@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+@import './assets/scss/typography';
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    // background: rgb(203,200,106);
+    // background: linear-gradient(0deg, rgba(203,200,106,1) 0%, rgba(238,97,97,1) 50%, rgba(106,183,203,1) 100%);
+    background-color: #f1f0f0;
+    margin: 0;
+    padding: 0 20px;
+}
+.app-root{
+    height: 100%;
+}

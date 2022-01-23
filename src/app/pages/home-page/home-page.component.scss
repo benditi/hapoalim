@@ -1,0 +1,27 @@
+@import '../../../assets/scss/helpers';
+
+.home-page {
+    .red-top {
+        background-image: url('../../../assets/imgs/sea.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+
+        .img-background {
+            background-color: #dc122383;
+            height: 400px;
+            width: 100%;
+        }
+    }
+
+    .main-white {
+        background-color: whitesmoke;
+        width: 90%;
+        height: 600px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        position: relative;
+        bottom: 135px;
+    }
+}
