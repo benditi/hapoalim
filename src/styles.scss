@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
 @import './assets/scss/typography';
+* {
+    box-sizing: border-box;
+}
 html {
     height: 100%;
 }

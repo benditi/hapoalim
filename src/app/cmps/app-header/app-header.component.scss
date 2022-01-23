@@ -2,11 +2,15 @@
 @import '../../../assets/scss/variables';
 
 .header{
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: Livvic-SemiBold;
+    height: 80px;
+    color: $clr3;
+    @media (min-width: $mobile-breakpoint){
+        padding: 0 100px;
+    }
     .screen {
         position: fixed;
         top: 0;
@@ -26,7 +30,8 @@
     h1 {
         cursor: pointer;
         font-family: Livvic-SemiBold;
-
+        margin: 0;
+        padding-left: 23px;
     }
     nav {
         transform: translateX(230%);
@@ -36,7 +41,7 @@
         background-color: rgba(240, 164, 126, 0.901);
         font-size: 20px;
         border-radius: 5px;
-        padding: 10px 20px;
+        padding: 10px 0;
         position: fixed;
         top: 0;
         right: 42px;
@@ -47,18 +52,23 @@
             display: flex;
             height: unset;
             position: unset;
-            padding: 10px 60px;
+            // padding: 10px 60px;
         }
         > *{
-            margin-right: 10px;
             margin-bottom: 14px;
             cursor: pointer;
+            padding: 23px;
             &:hover{
-                text-decoration: underline;
+                border-bottom: red solid 3px;
+                color: $clr4;
             }
             &.active{
                 font-weight: 600;
-                text-decoration: underline;
+                border-bottom: red solid 3px;
+                color: $clr3;
+            }
+            &:not(:last-child) {
+                margin-right: 10px;
             }
         }
         @media (min-width: $mobile-breakpoint){

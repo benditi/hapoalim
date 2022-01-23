@@ -1,4 +1,5 @@
 @import '../../../assets/scss/helpers';
+@import '../../../assets/scss/variables';
 
 .home-page {
     .red-top {
@@ -9,9 +10,13 @@
         width: 100%;
 
         .img-background {
-            background-color: #dc122383;
-            height: 400px;
+            background-color: #ca101fb0;
+            height: 224px;
             width: 100%;
+
+            @media(min-width:$mobile-breakpoint) {
+                height: 400px;
+            }
         }
     }
 
